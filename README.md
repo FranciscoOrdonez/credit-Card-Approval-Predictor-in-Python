@@ -61,7 +61,8 @@ D.  Class Distribution
 **2. Inspecting the applications**
 The output may appear a bit confusing at its first sight, but let's try to figure out the most important features of a credit card application.  The probable features in a typical credit card application are Gender, Age, Debt, Married, BankCustomer, EducationLevel, Ethnicity, YearsEmployed, PriorDefault, Employed, CreditScore, DriversLicense, Citizen, ZipCode, Income and finally the ApprovalStatus. 
 Using the output below, we can see that the outcome values in Approved are ‘+’ or ‘-’ for whether credit had been granted or not. These character symbols aren’t meaningful as is so will need to be transformed. Turning the ‘+’ to a ‘1’ and the ‘-’ to a ‘0’ will help with classification and logistic regression models later in the analysis.
-![image](https://user-images.githubusercontent.com/53232113/133692662-c6f4f222-ba98-4983-9066-8d2530df2383.png)
+![image](https://user-images.githubusercontent.com/53232113/133693068-332fbf25-b59c-4958-8a54-f7f93ac2ed10.png)
+
 
 
 As we can see from our first glance at the data, the dataset has a mixture of numerical and non-numerical features. 
