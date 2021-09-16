@@ -1,0 +1,11 @@
+import pandas as pd
+
+# ... YOUR CODE FOR TASK 1 ...
+
+# Load dataset
+
+cc_apps = pd.read_csv("datasets/cc_approvals.data" , header=None)
+...
+
+# Inspect data
+print(cc_apps.head(5))
