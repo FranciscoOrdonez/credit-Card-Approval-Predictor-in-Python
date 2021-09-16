@@ -13,7 +13,7 @@ Finally, we will build a machine learning model that can predict if an individua
 
 **1. LOAD AND VIEW DATA SET. SEE CODE [HERE](coding/load-data)**
 
-We find there are fifteen columns:
+We find there are fifteen columns in the first five lines:
 
  0      1      2  3  4  5  6     7  8  9   10 11 12     13   14 15
  
