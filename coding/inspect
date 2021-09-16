@@ -11,5 +11,5 @@ print(cc_apps_info)
 print("\n")
 
 # Inspect missing values in the dataset
-# ... YOUR CODE FOR TASK 2 ...
+
 print(cc_apps.tail(17))
