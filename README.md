@@ -14,7 +14,9 @@ Finally, we will build a machine learning model that can predict if an individua
 **1. LOAD AND VIEW DATA SET. SEE CODE [HERE](coding/load-data)**
 
 We find there are fifteen columns in the first five lines: 
-![image](https://user-images.githubusercontent.com/53232113/133691113-a2c14ca2-c0c8-42d2-83f7-97f842e3a14f.png)
+![image](https://user-images.githubusercontent.com/53232113/133691644-224e76f0-c540-4afb-b2f7-1b3662f8335c.png)
+
+
 And the structure is as follows: 
 
 Number of Instances: 690
