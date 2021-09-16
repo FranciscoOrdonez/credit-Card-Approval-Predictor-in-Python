@@ -14,8 +14,7 @@ Finally, we will build a machine learning model that can predict if an individua
 **1. LOAD AND VIEW DATA SET. SEE CODE [HERE](coding/load-data)**
 
 We find there are fifteen columns in the first five lines: 
-![image](https://user-images.githubusercontent.com/53232113/133691644-224e76f0-c540-4afb-b2f7-1b3662f8335c.png)
-
+![image](https://user-images.githubusercontent.com/53232113/133692235-a4e0d925-58e9-4430-ba83-59202e69598a.png)
 
 And the structure is as follows: 
 
