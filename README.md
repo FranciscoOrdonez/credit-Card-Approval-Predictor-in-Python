@@ -11,4 +11,4 @@ We will have to preprocess the dataset to ensure the machine learning model we c
 After our data is in good shape, we will do some exploratory data analysis to build our intuitions.
 Finally, we will build a machine learning model that can predict if an individual's application for a credit card will be accepted.
 
-1 load an viwe dataset. See code [here](recommender-coding/extract)
+1.- load an view dataset. See code [here](coding/recommender-coding/extract)
