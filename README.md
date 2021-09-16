@@ -67,6 +67,7 @@ To inspect the data we use pandas commands: describe, info and tail [here](codin
 
 The output is:
 For cc_apps.describe():
+
 ![image](https://user-images.githubusercontent.com/53232113/133695656-f0d0975f-0ca9-493d-babb-a0adc93de0b6.png)
 
 
