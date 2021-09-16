@@ -11,12 +11,11 @@ We will have to preprocess the dataset to ensure the machine learning model we c
 After our data is in good shape, we will do some exploratory data analysis to build our intuitions.
 Finally, we will build a machine learning model that can predict if an individual's application for a credit card will be accepted.
 
-**1. LOAD AND VIEW DATA SET. SEE CODE [HERE](coding/load-data)**
+**1. Load and view data set. See code [here](coding/load-data)**
 
 We find there are fifteen columns in the first five lines: 
 ![image](https://user-images.githubusercontent.com/53232113/133694972-c57c555c-aea7-4f52-b841-da9ec9c81549.png)
 
-![image](https://user-images.githubusercontent.com/53232113/133692235-a4e0d925-58e9-4430-ba83-59202e69598a.png)
 
 And the structure is as follows: 
 
@@ -62,26 +61,14 @@ D.  Class Distribution
 
 **2. Inspecting the applications**
 The output may appear a bit confusing at its first sight, but let's try to figure out the most important features of a credit card application.  The probable features in a typical credit card application are Gender, Age, Debt, Married, BankCustomer, EducationLevel, Ethnicity, YearsEmployed, PriorDefault, Employed, CreditScore, DriversLicense, Citizen, ZipCode, Income and finally the ApprovalStatus. 
-Using the output below, we can see that the outcome values in Approved are ‘+’ or ‘-’ for whether credit had been granted or not. These character symbols aren’t meaningful as is so will need to be transformed. Turning the ‘+’ to a ‘1’ and the ‘-’ to a ‘0’ will help with classification and logistic regression models later in the analysis.
-![image](https://user-images.githubusercontent.com/53232113/133693068-332fbf25-b59c-4958-8a54-f7f93ac2ed10.png)
-
-
-
 As we can see from our first glance at the data, the dataset has a mixture of numerical and non-numerical features. 
 
-To inspect the data we use pandas commands: structure, info and tail [HERE](coding/inspect)
+To inspect the data we use pandas commands: describe, info and tail [here](coding/inspect)
 
 The output is:
 For cc_apps.describe():
-               2           7          10             14
-count  690.000000  690.000000  690.00000     690.000000
-mean     4.758725    2.223406    2.40000    1017.385507
-std      4.978163    3.346513    4.86294    5210.102598
-min      0.000000    0.000000    0.00000       0.000000
-25%      1.000000    0.165000    0.00000       0.000000
-50%      2.750000    1.000000    0.00000       5.000000
-75%      7.207500    2.625000    3.00000     395.500000
-max     28.000000   28.500000   67.00000  100000.000000
+![image](https://user-images.githubusercontent.com/53232113/133695656-f0d0975f-0ca9-493d-babb-a0adc93de0b6.png)
+
 
 The features 2, 7, 10 and 14 contain numeric values (of types float64, float64, int64 and int64 respectively) and all the other features contain non-numeric values.
 
