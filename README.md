@@ -23,3 +23,43 @@ We find there are fifteen columns:
 
 And the structure is as follows: 
 
+Number of Instances: 690
+
+1.  Number of Attributes: 15 + class attribute
+
+2.  Attribute Information:
+
+    A1:	b, a.
+    A2:	continuous.
+    A3:	continuous.
+    A4:	u, y, l, t.
+    A5:	g, p, gg.
+    A6:	c, d, cc, i, j, k, m, r, q, w, x, e, aa, ff.
+    A7:	v, h, bb, j, n, z, dd, ff, o.
+    A8:	continuous.
+    A9:	t, f.
+    A10:	t, f.
+    A11:	continuous.
+    A12:	t, f.
+    A13:	g, p, s.
+    A14:	continuous.
+    A15:	continuous.
+    A16: +,-         (class attribute)
+
+3.  Missing Attribute Values:
+    37 cases (5%) have one or more missing values.  The missing
+    values from particular attributes are:
+
+    A1:  12
+    A2:  12
+    A4:   6
+    A5:   6
+    A6:   9
+    A7:   9
+    A14: 13
+
+9.  Class Distribution
+  
+    +: 307 (44.5%)
+    -: 383 (55.5%)
+
