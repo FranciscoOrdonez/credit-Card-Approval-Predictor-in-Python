@@ -71,23 +71,25 @@ For cc_apps.describe():
 ![image](https://user-images.githubusercontent.com/53232113/133695656-f0d0975f-0ca9-493d-babb-a0adc93de0b6.png)
 
 
-The features 2, 7, 10 and 14 contain numeric values (of types float64, float64, int64 and int64 respectively) and all the other features contain non-numeric values.
+The features 2, 7, 10 and 14 contain numeric values (of types float64, float64, int64 and int64 respectively) and all the other features contain non-numeric values. Apart from these, we can get useful statistical information (like mean, max, and min) about the features that have numerical values.
 
 For cc_apps.info():
+
 ![image](https://user-images.githubusercontent.com/53232113/133699014-cc0b4e32-d622-41f7-9e8a-293bd45ce1e9.png)
 
 
 
-For cc_apps.tail(17) (17 last lines of data):
+In order to check the last 17 lines of data in dataframe we use pandas command "cc_apps.tail(17)". The resuls is as follows:
+							
+![image](https://user-images.githubusercontent.com/53232113/133701389-15624bf1-de3d-484c-93e9-45a68566b982.png)
 
-
-The dataset also contains values from several ranges. Some features have a value range of 0 - 28, some have a range of 2 - 67, and some have a range of 1017 - 100000. Apart from these, we can get useful statistical information (like mean, max, and min) about the features that have numerical values.
+The dataset also contains values from several ranges. Some features have a value range of 0 - 28, some have a range of 2 - 67, and some have a range of 1017 - 100000. 
 
 **3 Changing '?' with 'NaN'**
-The dataset has missing values, which we'll take care of in this task. The missing values in the dataset are labeled with '?', which can be seen in the last cell's output:
+The dataset has missing values, which we'll take care of in this task. The missing values in the dataset are labeled with '?', which can be seen in raw 673, column ) which refers to "gender" feature:
 
- 0      1       2  3  4   5   6      7  8  9   10 11 12     13   14 15
-673  ?  29.50   2.000  y  p   e   h  2.000  f  f   0  f  g  00256   17  -
+![image](https://user-images.githubusercontent.com/53232113/133701790-dca21919-053a-4b76-ba0d-534cce434856.png)
+
 
 Now, let's temporarily replace these missing value question marks with NaN. View code [here](coding/missing1)
 
