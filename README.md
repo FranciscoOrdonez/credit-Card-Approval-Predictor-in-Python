@@ -11,7 +11,7 @@ We will have to preprocess the dataset to ensure the machine learning model we c
 After our data is in good shape, we will do some exploratory data analysis to build our intuitions.
 Finally, we will build a machine learning model that can predict if an individual's application for a credit card will be accepted.
 
-1.- load an view dataset. See code [here](coding/load-data)
+**1. LOAD AND VIEW DATA SET. SEE CODE [HERE](coding/load-data)**
 
 We find there are fifteen columns:
  0      1      2  3  4  5  6     7  8  9   10 11 12     13   14 15
@@ -25,9 +25,9 @@ And the structure is as follows:
 
 Number of Instances: 690
 
-1.  Number of Attributes: 15 + class attribute
+A.  Number of Attributes: 15 + class attribute
 
-2.  Attribute Information:
+B.  Attribute Information:
 
     A1:	b, a.
     A2:	continuous.
@@ -46,7 +46,7 @@ Number of Instances: 690
     A15:	continuous.
     A16: +,-         (class attribute)
 
-3.  Missing Attribute Values:
+C.  Missing Attribute Values:
     37 cases (5%) have one or more missing values.  The missing
     values from particular attributes are:
 
@@ -58,8 +58,12 @@ Number of Instances: 690
     A7:   9
     A14: 13
 
-9.  Class Distribution
+D.  Class Distribution
   
     +: 307 (44.5%)
     -: 383 (55.5%)
 
+**2. Inspecting the applications**
+The output may appear a bit confusing at its first sight, but let's try to figure out the most important features of a credit card application. The features of this dataset have been anonymized to protect the privacy, but this blog gives us a pretty good overview of the probable features. The probable features in a typical credit card application are Gender, Age, Debt, Married, BankCustomer, EducationLevel, Ethnicity, YearsEmployed, PriorDefault, Employed, CreditScore, DriversLicense, Citizen, ZipCode, Income and finally the ApprovalStatus. This gives us a pretty good starting point, and we can map these features with respect to the columns in the output.
+
+As we can see from our first glance at the data, the dataset has a mixture of numerical and non-numerical features. This can be fixed with some preprocessing, but before we do that, let's learn about the dataset a bit more to see if there are other dataset issues that need to be fixed.. LOAD AND VIEW DATA SET. SEE CODE [HERE](coding/load-data)**
