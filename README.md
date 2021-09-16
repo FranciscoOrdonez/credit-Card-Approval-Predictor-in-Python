@@ -3,7 +3,7 @@ Automated  Credit Card Approval Predictor for Commercial Banks
 
 In this notebook, we will build an automatic credit card approval predictor using machine learning techniques, just like the real banks do. Most of this notebook has been studied from the project in Datacamp: Predicting Credit Card Approvals.  Part of the project has been done by Datacamp and the programs have been completed by the author.
 
-We'll use the Credit Card Approval [dataset](http://archive.ics.uci.edu/ml/machine-learning-databases/credit-screening/) and [codebook](http://archive.ics.uci.edu/ml/machine-learning-databases/credit-screening/crx.names) from the UCI Machine Learning Repository . The structure of this notebook is as follows:
+We'll use the Credit Card Approval [dataset](http://archive.ics.uci.edu/ml/machine-learning-databases/credit-screening/)  from the UCI Machine Learning Repository . The structure of this notebook is as follows:
 
 First, we will start off by loading and viewing the dataset.
 We will see that the dataset has a mixture of both numerical and non-numerical features, that it contains values from different ranges, plus that it contains a number of missing entries.
@@ -20,4 +20,6 @@ We find there are fifteen columns:
 2  a  24.50  0.500  u  g  q  h  1.50  t  f   0  f  g  00280  824  +
 3  b  27.83  1.540  u  g  w  v  3.75  t  t   5  t  g  00100    3  +
 4  b  20.17  5.625  u  g  w  v  1.71  t  f   0  f  s  00120    0  +
+
+And the structure is as follows: 
 
