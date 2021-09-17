@@ -118,3 +118,8 @@ There are still some missing values to be imputed for columns 0, 1, 3, 4, 5, 6 a
 
 We are going to impute these missing values with the most frequent values as present in the respective columns. This is good practice when it comes to imputing missing values for categorical data in general.
 
+After imputing the missing values with the most frequent values in the respective columns, the results of number of  missing values per column is as follows:
+
+![image](https://user-images.githubusercontent.com/53232113/133713791-abbba1ba-bd18-4e72-b00a-a91d380f5c5a.png)
+
+The result is  that there is no missing values in any columns any more. We have achived to have data with no missing values.
