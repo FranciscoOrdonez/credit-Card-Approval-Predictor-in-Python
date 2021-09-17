@@ -132,8 +132,24 @@ For preprocessing we are going to conver non-numeric data into numeric, split th
 
 First, we will be converting all the non-numeric values into numeric ones. We do this because not only it results in a faster computation but also many machine learning models (like XGBoost) (and especially the ones developed using scikit-learn) require the data to be in a strictly numeric format. We will do this by using a technique called label encoding.
 
-To viww  label encoding, check [here](coding/preprocessing1].
+To view the code for  label encoding and the statistics results, check [here](coding/preprocessing1].
 
-The result of label encoding is the following:
+If label encoding is successful, all columns will have numeric data.  To check this we print dataframe info, summary statistics and the last 17 rows of dataframe.
+- Dataframe info:
+
+![image](https://user-images.githubusercontent.com/53232113/133717485-c105d21a-d397-4ef2-b4eb-406a8b82b3de.png)
+
+As we can see, all columns non-numeric have been changed to numeric  int32.
+
+- summary statistics:
+
+![image](https://user-images.githubusercontent.com/53232113/133717895-8b57c842-6890-4841-bc9e-ababaad0993f.png)
+
+
+- last 17 rows: 
+
+![image](https://user-images.githubusercontent.com/53232113/133718074-d61366c2-07fe-4e13-9bac-de840f012d4d.png)
+
+
 
 
