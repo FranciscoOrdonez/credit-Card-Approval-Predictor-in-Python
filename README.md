@@ -88,7 +88,7 @@ The dataset also contains values from several ranges. Some features have a value
 **3 Handling missing values**
 Missing values are important to check before applying a model,  because most models do not handle missing values implicitly.
 
-**A. Changing '?' with 'NaN'**
+**3-A. Changing '?' with 'NaN'**
 
 The dataset has missing values, which we'll take care of in this task. The missing values in the dataset are labeled with '?', which can be seen in line 673, column 0 which refers to "gender" feature:
 
@@ -101,7 +101,7 @@ Now, check how row 673, column 0("Gender") has changed to "NaN'
 
 ![image](https://user-images.githubusercontent.com/53232113/133703535-76fe61aa-3a8e-4aaf-87a1-832c02288e82.png)
 
-**B. Handling missing values in numeric columns**
+**3-B. Handling missing values in numeric columns**
 First we are going to check how many missing values we have per column or feature, then, we are going to impute the missing values with a strategy called mean imputation, which only works for numeric columns, finally we will check again how many missing values we have per column. View code [here](coding/missing2)
 As the dataset contains both numeric and non-numeric data, for this task we will only impute the missing values (NaNs) present in the columns having numeric data-types (columns 2, 7, 10 and 14).
 
@@ -112,7 +112,7 @@ The result before and after the mean imputation is:
 The number of missing values per column is the same before and after the imputation, which means there has not been any missing values on numeric columns.
 The missing values are on columns 0,1,3,4,5,6 and 13, which are non-numerical, with a total 67 missing values.
 
-**C. Handling missing values in non-numeric columns**
+**3-C. Handling missing values in non-numeric columns**
 
 There are still some missing values to be imputed for columns 0, 1, 3, 4, 5, 6 and 13. All of these columns contain non-numeric data and this is why the mean imputation strategy would not work here. This needs a different treatment.
 
@@ -123,3 +123,17 @@ After imputing the missing values with the most frequent values in the respectiv
 ![image](https://user-images.githubusercontent.com/53232113/133713791-abbba1ba-bd18-4e72-b00a-a91d380f5c5a.png)
 
 The result is  that there is no missing values in any columns any more. We have achived to have data with no missing values.
+
+**4 Preprocesing the data**
+
+For preprocessing we are going to conver non-numeric data into numeric, split the data into train and test sets, and scale the feature values to a uniform range.
+
+**4-A  Convert non-numeric data into numeric**
+
+First, we will be converting all the non-numeric values into numeric ones. We do this because not only it results in a faster computation but also many machine learning models (like XGBoost) (and especially the ones developed using scikit-learn) require the data to be in a strictly numeric format. We will do this by using a technique called label encoding.
+
+To viww  label encoding, check [here](coding/preprocessing1].
+
+The result of label encoding is the following:
+
+
