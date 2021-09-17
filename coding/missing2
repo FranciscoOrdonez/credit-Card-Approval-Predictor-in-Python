@@ -1,0 +1,9 @@
+#count number of NaNs in the dataset prior of using mean imputation
+print(cc_apps.isnull().sum())
+
+# Impute the missing values with mean imputation
+cc_apps.fillna(cc_apps.mean(), inplace=True)
+
+
+# Count the number of NaNs in the dataset to verify
+print(cc_apps.isnull().sum())
