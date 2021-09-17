@@ -103,4 +103,18 @@ Now, check how row 673, column 0("Gender") has changed to "NaN'
 
 **B. Handling missing values in numeric columns**
 First we are going to check how many missing values we have per column or feature, then, we are going to impute the missing values with a strategy called mean imputation, which only works for numeric columns, finally we will check again how many missing values we have per column. View code [here](coding/missing2)
+As the dataset contains both numeric and non-numeric data, for this task we will only impute the missing values (NaNs) present in the columns having numeric data-types (columns 2, 7, 10 and 14).
+
+The result is:
+
+![image](https://user-images.githubusercontent.com/53232113/133710796-49925ae6-1f52-47e5-ad2f-2eb6b8c90d0f.png)
+
+The number of missing values per column is the same before and after the imputation, which means there has not been any missing values on numeric columns.
+The missing values are on columns 0,1,3,4,5,6 and 13, which are non-numerical, with a total 67 missing values.
+
+**C. Handling missing values in non-numeric columns**
+
+There are still some missing values to be imputed for columns 0, 1, 3, 4, 5, 6 and 13. All of these columns contain non-numeric data and this is why the mean imputation strategy would not work here. This needs a different treatment.
+
+We are going to impute these missing values with the most frequent values as present in the respective columns. This is good practice when it comes to imputing missing values for categorical data in general.
 
