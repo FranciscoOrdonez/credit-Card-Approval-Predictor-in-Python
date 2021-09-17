@@ -1,17 +1,19 @@
 # credit-Card-Approval-Predictor-in-Python
 Automated  Credit Card Approval Predictor for Commercial Banks
 
-In this notebook, we will build an automatic credit card approval predictor using machine learning techniques, just like the real banks do. Most of this notebook has been studied from the project in Datacamp: Predicting Credit Card Approvals.  Part of the project has been done by Datacamp and the programs have been completed by the author.
+In this notebook, we will build an automatic credit card approval predictor using machine learning techniques, just like the real banks do. Most of this notebook has been studied from the project in Datacamp "Predicting Credit Card Approvals".  Part of the project has been done by Datacamp and the programs have been completed by the author.
 
 We'll use the Credit Card Approval [dataset](http://archive.ics.uci.edu/ml/machine-learning-databases/credit-screening/)  from the UCI Machine Learning Repository . The structure of this notebook is as follows:
 
-First, we will start off by loading and viewing the dataset.
-We will see that the dataset has a mixture of both numerical and non-numerical features, that it contains values from different ranges, plus that it contains a number of missing entries.
+First, we will start off by loading and viewing the data set. 
+We will see that the dataset has a mixture of both numerical and non-umerical features, that it contains values from different ranges, plus that it contains a number of missing entries.
 We will have to preprocess the dataset to ensure the machine learning model we choose can make good predictions.
 After our data is in good shape, we will do some exploratory data analysis to build our intuitions.
 Finally, we will build a machine learning model that can predict if an individual's application for a credit card will be accepted.
 
-**1. Load and view data set. View code [here](coding/load-data)**
+**1. Load and view data set. **
+
+First we have to go to UCI Machine Leaning Repository on Credit Approval Data, dowmload Data Folder,  get 'crx.data',  save it with name 'crx.csv', and load and view the data with pandas commands. View code [here](coding/load-data)
 
 We find there are fifteen columns in the first five lines: 
 ![image](https://user-images.githubusercontent.com/53232113/133694972-c57c555c-aea7-4f52-b841-da9ec9c81549.png)
