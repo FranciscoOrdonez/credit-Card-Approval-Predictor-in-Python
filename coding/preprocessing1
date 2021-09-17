@@ -1,0 +1,12 @@
+# Import LabelEncoder
+from sklearn.preprocessing import LabelEncoder
+# Instantiate LabelEncoder
+
+le = LabelEncoder()
+# Iterate over all the values of each column and extract their dtypes
+        
+for col in cc_apps.columns.values:
+    # Compare if the dtype is object
+    if cc_apps[col].dtypes=='object':
+    # Use LabelEncoder to do the numeric transformation
+        cc_apps[col]=le.fit_transform(cc_apps[col])        
