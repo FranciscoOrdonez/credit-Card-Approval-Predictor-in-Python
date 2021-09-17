@@ -13,7 +13,7 @@ Finally, we will build a machine learning model that can predict if an individua
 
 **1. Load and view data set. **
 
-First we have to go to UCI Machine Leaning Repository on Credit Approval Data, dowmload Data Folder,  get 'crx.data',  save it with name 'crx.csv', and load and view the data with pandas commands. View code [here](coding/load-data)
+First we have to go to UCI Machine Leaning Repository on Credit Approval Data, download Data Folder,  get 'crx.data',  save it with name 'crx.csv', and load and view the data with pandas commands. View code [here](coding/load-data)
 
 We find there are fifteen columns in the first five lines: 
 ![image](https://user-images.githubusercontent.com/53232113/133694972-c57c555c-aea7-4f52-b841-da9ec9c81549.png)
