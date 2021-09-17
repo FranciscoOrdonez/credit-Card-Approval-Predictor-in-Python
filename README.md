@@ -105,7 +105,7 @@ Now, check how row 673, column 0("Gender") has changed to "NaN'
 First we are going to check how many missing values we have per column or feature, then, we are going to impute the missing values with a strategy called mean imputation, which only works for numeric columns, finally we will check again how many missing values we have per column. View code [here](coding/missing2)
 As the dataset contains both numeric and non-numeric data, for this task we will only impute the missing values (NaNs) present in the columns having numeric data-types (columns 2, 7, 10 and 14).
 
-The result is:
+The result before and after the mean imputation is:
 
 ![image](https://user-images.githubusercontent.com/53232113/133710796-49925ae6-1f52-47e5-ad2f-2eb6b8c90d0f.png)
 
