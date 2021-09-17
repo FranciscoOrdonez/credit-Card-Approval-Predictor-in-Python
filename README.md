@@ -11,7 +11,7 @@ We will have to preprocess the dataset to ensure the machine learning model we c
 After our data is in good shape, we will do some exploratory data analysis to build our intuitions.
 Finally, we will build a machine learning model that can predict if an individual's application for a credit card will be accepted.
 
-**1. Load and view data set. **
+**1. Load and view data set**
 
 First we have to go to UCI Machine Leaning Repository on Credit Approval Data, download Data Folder,  get 'crx.data',  save it with name 'crx.csv', and load and view the data with pandas commands. View code [here](coding/load-data)
 
