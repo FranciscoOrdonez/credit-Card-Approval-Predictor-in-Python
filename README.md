@@ -116,9 +116,9 @@ The missing values are on columns 0,1,3,4,5,6 and 13, which are non-numerical, w
 
 There are still some missing values to be imputed for columns 0, 1, 3, 4, 5, 6 and 13. All of these columns contain non-numeric data and this is why the mean imputation strategy would not work here. This needs a different treatment.
 
-We are going to impute these missing values with the most frequent values as present in the respective columns. This is good practice when it comes to imputing missing values for categorical data in general.
+We are going to impute these missing values with the most frequent values as present in the respective columns. This is good practice when it comes to imputing missing values for categorical data in general. to view code, go to [code](coding/missing3),
 
-After imputing the missing values with the most frequent values in the respective columns(view code [here](coding/missing3), the results of number of  missing values per column is as follows:
+After imputing the missing values with the most frequent values in the respective columns,  the results of number of  missing values per column is as follows:
 
 ![image](https://user-images.githubusercontent.com/53232113/133713791-abbba1ba-bd18-4e72-b00a-a91d380f5c5a.png)
 
@@ -132,7 +132,7 @@ For preprocessing we are going to conver non-numeric data into numeric, split th
 
 First, we will be converting all the non-numeric values into numeric ones. We do this because not only it results in a faster computation but also many machine learning models (like XGBoost) (and especially the ones developed using scikit-learn) require the data to be in a strictly numeric format. We will do this by using a technique called label encoding.
 
-To view the code for  label encoding and the statistics results, check [here](coding/preprocessing1].
+To view the code for  label encoding and the statistics results, check [here](coding/preprocessing1).
 
 If label encoding is successful, all columns will have numeric data.  To check this we print dataframe info, summary statistics and the last 17 rows of dataframe.
 - Dataframe info:
