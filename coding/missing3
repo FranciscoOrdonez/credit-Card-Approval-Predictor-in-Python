@@ -1,0 +1,8 @@
+# Iterate over each column of cc_apps
+for col in cc_apps.columns:
+    # Check if the column is of object type
+    if cc_apps[col].dtype == 'object':
+        cc_apps = cc_apps.fillna(cc_apps[col].value_counts().index[0])
+                
+# Count the number of NaNs in the dataset and print the counts to verify
+print(cc_apps.isnull().sum())
