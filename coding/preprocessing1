@@ -9,4 +9,20 @@ for col in cc_apps.columns.values:
     # Compare if the dtype is object
     if cc_apps[col].dtypes=='object':
     # Use LabelEncoder to do the numeric transformation
-        cc_apps[col]=le.fit_transform(cc_apps[col])        
+        cc_apps[col]=le.fit_transform(cc_apps[col])     
+        
+ # Print DataFrame information
+cc_apps_info = cc_apps.info()
+print(cc_apps_info)
+
+print("\n")
+
+# Print summary statistics
+cc_apps_description = cc_apps.describe()
+print(cc_apps_description)
+
+print("\n")
+
+print("\n")
+
+print(cc_apps.tail(17))
