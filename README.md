@@ -77,7 +77,7 @@ For cc_apps.info():
 
 ![image](https://user-images.githubusercontent.com/53232113/133699014-cc0b4e32-d622-41f7-9e8a-293bd45ce1e9.png)
 
-
+As seen, features 2(debt) and 7(years employed) have type "float64" and features 10(credit score) and 14(income) have type "int64". These onlyh four features are numerical. The remaining features are type "object", which are non-numeric values.  Just observe that the feature 15('approval status') is the target which is a non-numeric value.
 
 In order to check the last 17 lines of data in dataframe we use pandas command "cc_apps.tail(17)". The resuls is as follows:
 							
@@ -85,11 +85,17 @@ In order to check the last 17 lines of data in dataframe we use pandas command "
 
 The dataset also contains values from several ranges. Some features have a value range of 0 - 28, some have a range of 2 - 67, and some have a range of 1017 - 100000. 
 
-**3 Changing '?' with 'NaN'**
-The dataset has missing values, which we'll take care of in this task. The missing values in the dataset are labeled with '?', which can be seen in raw 673, column ) which refers to "gender" feature:
+**3 Handling missing values**
+**A. Changing '?' with 'NaN'**
+The dataset has missing values, which we'll take care of in this task. The missing values in the dataset are labeled with '?', which can be seen in raw 673, column 0 which refers to "gender" feature:
 
 ![image](https://user-images.githubusercontent.com/53232113/133701790-dca21919-053a-4b76-ba0d-534cce434856.png)
 
 
-Now, let's temporarily replace these missing value question marks with NaN. View code [here](coding/missing1)
+Now, let's temporarily replace these missing value question marks with NaN. View code [here](coding/missing1).
+
+Now, check how raw 673, column 0("Gender") has changed to "NaN'
+
+![image](https://user-images.githubusercontent.com/53232113/133703535-76fe61aa-3a8e-4aaf-87a1-832c02288e82.png)
+
 
