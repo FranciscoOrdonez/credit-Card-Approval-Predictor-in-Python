@@ -164,7 +164,13 @@ After drropping two features, the dataframe is as follows:
 
 ![image](https://user-images.githubusercontent.com/53232113/133873322-70bcb7af-7b31-4cca-9821-1fb0185815a6.png)
 
-As shown, now we only have 13 columns, 12 features and one target column.  Now With that, Then, convert dataframe into numpy array so we can split the database into train and test sets. 
+As shown, now we only have 13 columns, 12 features and one target column.  Now With that, then, convert dataframe into numpy array so we can split the database into train and test sets. The data is now in numpy arrays format.
+
+After splitting, the arrays for train and test are as follows:
+
+![image](https://user-images.githubusercontent.com/53232113/133900053-9a92df45-0909-4b07-b2c1-83fa48d03197.png)
+
+Here, there are 33% of all data with test sets, and 67% of all data with train sets.  The X_train and X_test have 12 columns and the y_train and y_testa have 1 target column.
 
 
 
