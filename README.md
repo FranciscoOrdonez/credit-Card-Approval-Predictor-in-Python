@@ -156,7 +156,7 @@ As seen, all columns are now numeric.
 
 **4-B   Feature Selection, convertion from  dataframe to numpy array,  and split the database into train and test sets**
 
-To check coding view  here(coding/preprocessing2)
+To check coding view  [here](coding/preprocessing2)
 
 Features like DriversLicense(11) and ZipCode(13) are not as important as the other features in the dataset for predicting credit card approvals. We should drop them to design our machine learning model with the best set of features. In Data Science literature, this is often referred to as feature selection.
 
