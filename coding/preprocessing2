@@ -5,7 +5,10 @@ from sklearn.model_selection import train_test_split
 # Drop the features 11 and 13 and convert the DataFrame to a NumPy array
 cc_apps = cc_apps.drop([11, 13], axis=1)
 print(cc_apps.info())
+
+#change cc_apps pandas framework to a numpy array
 cc_apps = cc_apps.values
+
 
 
 # Segregate features and labels into separate variables
