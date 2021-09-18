@@ -170,7 +170,12 @@ After splitting, the arrays for train and test are as follows:
 
 ![image](https://user-images.githubusercontent.com/53232113/133900053-9a92df45-0909-4b07-b2c1-83fa48d03197.png)
 
-Here, there are 33% of all data with test sets, and 67% of all data with train sets.  The X_train and X_test have 12 columns and the y_train and y_testa have 1 target column.
+Here, there are 33% of all data with test sets, and 67% of all data with train sets.  The X_train and X_test have 12 columns and the y_train and y_test have 1 target column.
+
+**4-C   Scaling the data**
+ We are only left with one final preprocessing step of scaling before we can fit a machine learning model to the data. View code [here](coding/preprocessing3)
+
+Now, let's try to understand what these scaled values mean in the real world. Let's use CreditScore as an example. The credit score of a person is their creditworthiness based on their credit history. The higher this number, the more financially trustworthy a person is considered to be. So, a CreditScore of 1 is the highest since we're rescaling all the values to the range of 0-1.
 
 
 
