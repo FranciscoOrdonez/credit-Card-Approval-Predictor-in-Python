@@ -1,0 +1,22 @@
+# Import train_test_split
+
+from sklearn.model_selection import train_test_split
+
+# Drop the features 11 and 13 and convert the DataFrame to a NumPy array
+cc_apps = cc_apps.drop([11, 13], axis=1)
+print(cc_apps.info())
+cc_apps = cc_apps.values
+
+
+# Segregate features and labels into separate variables
+X,y = cc_apps[:,0:12] , cc_apps[:,13]
+
+# Split into train and test sets
+X_train, X_test, y_train, y_test = train_test_split(X,
+                                y,
+                                test_size=0.33,
+                                random_state=42)
+
+
+print(X_train.shape, y_train.shape)
+print(X_test.shape, y_test.shape)
