@@ -152,6 +152,17 @@ As we can see, all columns non-numeric have been changed to numeric  int32.
 
 ![image](https://user-images.githubusercontent.com/53232113/133718074-d61366c2-07fe-4e13-9bac-de840f012d4d.png)
 
+As seen, all columns are now numeric.
+
+**4-B   Feature Selection, convertion from  dataframe to numpy array,  and split the database into train and test sets. View code here.(coding/preprocessing2)**
+
+Features like DriversLicense(11) and ZipCode(13) are not as important as the other features in the dataset for predicting credit card approvals. We should drop them to design our machine learning model with the best set of features. In Data Science literature, this is often referred to as feature selection.
+
+After drropping two features, the dataframe is as follows:
+
+![image](https://user-images.githubusercontent.com/53232113/133873322-70bcb7af-7b31-4cca-9821-1fb0185815a6.png)
+
+As shown, now we only have 13 columns, 12 features and one target column.  Now With that, Then, convert dataframe into numpy array so we can split the database into train and test sets. 
 
 
 
