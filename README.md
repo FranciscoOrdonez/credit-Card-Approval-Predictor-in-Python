@@ -177,5 +177,18 @@ Here, there are 33% of all data with test sets, and 67% of all data with train s
 
 Now, let's try to understand what these scaled values mean in the real world. Let's use CreditScore as an example. The credit score of a person is their creditworthiness based on their credit history. The higher this number, the more financially trustworthy a person is considered to be. So, a CreditScore of 1 is the highest since we're rescaling all the values to the range of 0-1.
 
+Creditscore is 0 to 67:
+
+![image](https://user-images.githubusercontent.com/53232113/133937334-33e70c37-cbb6-4cb8-b5cf-fdad37533b46.png)
+
+And, taking  the training data X_data on column Creditscore( feature 10), lines 450 to 462, and comparing with scaling training data ScaledX_data, the results are shown below.
+
+![image](https://user-images.githubusercontent.com/53232113/133937396-29e1fc60-6ae9-49a8-8991-18c48cc4736c.png)
+
+Since the minimum and maximum creditscores are 0 and 67, a '1' scaled score is 1/67 which is 0.01492.
+
+
+
+
 
 
