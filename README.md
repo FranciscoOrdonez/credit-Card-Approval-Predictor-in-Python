@@ -208,7 +208,7 @@ One way to understand concepts as "true positive (tp)", "true negative (tn)", "f
 ![image](https://user-images.githubusercontent.com/53232113/134085774-75605f29-415e-435a-a718-17a416b0d187.png)
 
 
-The accuracy of our model is 0.84 which is the the F1 SCORE  or the HARMONIC MEAN OF PRECISION AND RECALL, which is a pretty good number.
+The accuracy of our model is 0.83 which is the the F1 SCORE  or the HARMONIC MEAN OF PRECISION AND RECALL, which is a pretty good number.
 
 
 
