@@ -205,7 +205,8 @@ The accuracy of the logistic regression classifier, the confussion matrix and th
 
 One way to understand concepts as "true positive (tp)", "true negative (tn)", "false positive(fp)", and "false negative(fn)" and formulas like accuracy, precision, recall, and F1 score, is by understanding the following chart:
 
-![image](https://user-images.githubusercontent.com/53232113/134084692-d184b813-1ff0-4cf3-b951-0288f3a1a4b8.png)
+![image](https://user-images.githubusercontent.com/53232113/134085774-75605f29-415e-435a-a718-17a416b0d187.png)
+
 
 The accuracy of our model is 0.84 which is the the F1 SCORE  or the HARMONIC MEAN OF PRECISION AND RECALL, which is a pretty good number.
 
