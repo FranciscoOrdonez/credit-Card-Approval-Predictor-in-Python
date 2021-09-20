@@ -204,7 +204,6 @@ The accuracy of the logistic regression classifier, the confussion matrix and th
 ![image](https://user-images.githubusercontent.com/53232113/134072263-a24e890b-79b5-4539-b631-558780db9414.png)
 
 
-![image](https://user-images.githubusercontent.com/53232113/134071788-0324275f-369c-4d40-81ed-d092104be41a.png)
 
 
 
