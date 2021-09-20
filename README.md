@@ -194,3 +194,17 @@ There are many models to use.  Why use Logistic Regression?.  Regression models 
 View regression model fitting code [here](coding/model1).
 
 For fitting this model we use  the rescaledX_train and  y_train sets.
+
+**6 Making predictions and evaluate performance**
+
+We will now evaluate our model on the test set with respect to [classification accuracy](https://developers.google.com/machine-learning/crash-course/classification/accuracy). But we will also take a look the model's [confusion matrix](https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/). In the case of predicting credit card applications, it is equally important to see if our machine learning model is able to predict the approval status of the applications as denied that originally got denied. If our model is not performing well in this aspect, then it might end up approving the application that should have been approved. The confusion matrix helps us to view our model's performance from these aspects.  The classification report is a series of statictics representing the confussion matrix
+
+The accuracy of the logistic regression classifier, the confussion matrix and the classification report are shown below.
+
+![image](https://user-images.githubusercontent.com/53232113/134072263-a24e890b-79b5-4539-b631-558780db9414.png)
+
+
+![image](https://user-images.githubusercontent.com/53232113/134071788-0324275f-369c-4d40-81ed-d092104be41a.png)
+
+
+
