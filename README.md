@@ -191,4 +191,6 @@ Since the minimum and maximum creditscores are 0 and 67, a  non scaled '67' is a
 
 There are many models to use.  Why use Logistic Regression?.  Regression models are useful for predicting continuous (numeric) variables. However, the target value in Approved is binary and can only be values of 1 or 0. The applicant can either be issued a credit card or denied- they cannot receive a partial credit card. We could use linear regression to predict the approval decision using threshold and anything below assigned to 0 and anything above is assigned to 1. Unfortunately, the predicted values could be well outside of the 0 to 1 expected range. Therefore, linear or multivariate regression will not be effective for predicting the values. Instead, logistic regression will be more useful because it will produce probability that the target value is 1. Probabilities are always between 0 and 1 so the output will more closely match the target value range than linear regression
 
-View regression model fitting [here](coding/model1)
+View regression model fitting code [here](coding/model1).
+
+For fitting this model we use  the rescaledX_train and  y_train sets.
