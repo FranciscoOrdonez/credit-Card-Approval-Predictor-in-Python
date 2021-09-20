@@ -185,7 +185,7 @@ And, taking  the training data X_data on column Creditscore( feature 10), lines 
 
 ![image](https://user-images.githubusercontent.com/53232113/133937396-29e1fc60-6ae9-49a8-8991-18c48cc4736c.png)
 
-Since the minimum and maximum creditscores are 0 and 67, a '1' scaled score is 1/67 which is 0.01492.
+Since the minimum and maximum creditscores are 0 and 67, a  non scaled '67' is a '1' scaled score and a  non scaled '1'  is a  1/67 or  '0.01492' scaled score.
 
 
 
