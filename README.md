@@ -216,6 +216,10 @@ Grid search is an approach to parameter tuning that will methodically build and 
 
 Logistic Regression  consists of different hyperparameters but we will grid search over the following two: tot, max_iter. 
 
+The parameter grid is:
+
+![image](https://user-images.githubusercontent.com/53232113/134095101-d6380bb3-669b-4bfd-9812-4e4760833429.png)
+
 We have defined the grid of hyperparameter values and converted them into a single dictionary format which GridSearchCV() expects as one of its parameters. Now, we will begin the grid search to see which values perform best.
 
 We will instantiate GridSearchCV() with our earlier logreg model with all the data we have. Instead of passing train and test sets separately, we will supply X (scaled version) and y. We will also instruct GridSearchCV() to perform a cross-validation of five folds. View code [here](coding/model3).
