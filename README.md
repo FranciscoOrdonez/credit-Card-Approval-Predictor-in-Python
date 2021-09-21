@@ -224,6 +224,8 @@ We have defined the grid of hyperparameter values and converted them into a sing
 
 We will instantiate GridSearchCV() with our earlier logreg model with all the data we have. Instead of passing train and test sets separately, we will supply X (scaled version) and y. We will also instruct GridSearchCV() to perform a cross-validation of five folds. View code [here](coding/model3).
 
+The accuracy of this grid model is a little better: 0.850725 using  the parameters: {'max_iter': 100, 'tol': 0.01}.
+
 
 
 
