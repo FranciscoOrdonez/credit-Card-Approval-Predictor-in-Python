@@ -210,6 +210,17 @@ One way to understand concepts as "true positive (tp)", "true negative (tn)", "f
 
 The accuracy of our model is 0.83 which is the the F1 SCORE  or the HARMONIC MEAN OF PRECISION AND RECALL, which is a pretty good number.
 
+**7   Grid Searching**
+
+Grid search is an approach to parameter tuning that will methodically build and evaluate a model for each combination of algorithm parameters specified in a grid. This is to improve the model's ability to predict credit card approvals.
+
+Logistic Regression  consists of different hyperparameters but we will grid search over the following two: tot, max_iter. 
+
+We have defined the grid of hyperparameter values and converted them into a single dictionary format which GridSearchCV() expects as one of its parameters. Now, we will begin the grid search to see which values perform best.
+
+We will instantiate GridSearchCV() with our earlier logreg model with all the data we have. Instead of passing train and test sets separately, we will supply X (scaled version) and y. We will also instruct GridSearchCV() to perform a cross-validation of five folds. View code [here](coding/model3).
+
+
 
 
 
