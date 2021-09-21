@@ -226,6 +226,8 @@ We will instantiate GridSearchCV() with our earlier logreg model with all the da
 
 The accuracy of this grid model is a little better: 0.850725 using  the parameters: {'max_iter': 100, 'tol': 0.01}.
 
+Finally, to predict if a new client is going to be approved to Credit card request, just create a X_myClient with my client features, scaled, instanciate gridModel with hyperparamenters indicated above, with GridSearchCV, fit it, and user gridModel.predict to see it this new client is approved or not.   This grid model has 85 % chance to predict the correct way.  
+
 
 
 
