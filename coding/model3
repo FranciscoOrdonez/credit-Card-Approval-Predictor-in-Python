@@ -1,0 +1,23 @@
+# Import GridSearchCV
+
+from sklearn.model_selection import GridSearchCV
+
+# Define the grid of values for tol and max_iter
+tol = [0.01,0.001,0.0001]
+max_iter = [100,150,200]
+
+# Create a dictionary where tol and max_iter are keys and the lists of their values are corresponding values
+param_grid = dict(tol = tol, max_iter = max_iter)
+
+# Instantiate GridSearchCV with the required parameters
+grid_model = GridSearchCV(estimator=logreg, param_grid=param_grid, cv=5)
+
+# Use scaler to rescale X and assign it to rescaledX
+rescaledX = scaler.fit_transform(X)
+
+# Fit data to grid_model
+grid_model_result = grid_model.fit(rescaledX, y)
+
+# Summarize results
+best_score, best_params = grid_model_result.best_score_, grid_model_result.best_params_
+print("Best: %f using %s" % (best_score, best_params))
