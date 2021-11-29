@@ -1,7 +1,7 @@
 # credit-Card-Approval-Predictor-in-Python
 Automated  Credit Card Approval Predictor for Commercial Banks
 
-In this notebook, we will build an automatic credit card approval predictor using machine learning techniques, just like the real banks do. Most of this work comes from the project in Datacamp "Predicting Credit Card Approvals", with some observations and add-ons by by the author.
+In this notebook, we will build an automatic credit card approval predictor using machine learning techniques, just like the real banks do. Most of this work comes from the project in Datacamp "Predicting Credit Card Approvals", with some observations and add-ons by  the author.
 
 We'll use the Credit Card Approval [dataset](http://archive.ics.uci.edu/ml/machine-learning-databases/credit-screening/)  from the UCI Machine Learning Repository . The structure of this notebook is as follows:
 
