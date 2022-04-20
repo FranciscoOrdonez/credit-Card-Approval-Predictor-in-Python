@@ -6,6 +6,7 @@ In this notebook, we will build an automatic credit card approval predictor usin
 We'll use the Credit Card Approval [dataset](http://archive.ics.uci.edu/ml/machine-learning-databases/credit-screening/)  from the UCI Machine Learning Repository . The structure of this notebook is as follows:
 
 First, we will start off by loading and viewing the data set. 
+There are two aproaches to load the dataset, one is the normal way by using the pandas command 'read_csv' and the other is by accessing a class where path is located.
 We will see that the dataset has a mixture of both numerical and non-numerical features, that it contains values from different ranges, plus that it contains a number of missing entries.
 We will have to preprocess the dataset to ensure the machine learning model we choose can make good predictions.
 After our data is in good shape, we will do some exploratory data analysis to build our intuitions.
@@ -13,7 +14,7 @@ Finally, we will build a machine learning model that can predict if an individua
 
 **1. Load and view data set**
 
-First we have to go to UCI Machine Leaning Repository on Credit Approval Data, download Data Folder,  get 'crx.data',  save it with name 'crx.csv', and load and view the data with pandas commands. View code [here](coding/load-data)
+First we have to go to UCI Machine Leaning Repository on Credit Approval Data, download Data Folder,  get 'crx.data',  save it with name 'crx.csv', and load and view the data one with normal pandas commands and the other with a class that refers to pandas command. View code [here](coding/load-data)
 
 We find there are fifteen columns in the first five lines: 
 ![image](https://user-images.githubusercontent.com/53232113/133694972-c57c555c-aea7-4f52-b841-da9ec9c81549.png)
