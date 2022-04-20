@@ -1,6 +1,7 @@
 import pandas as pd
 
 # ... YOUR CODE FOR TASK 1 ...
+# 1st approach.. using pandas command pr.read_cvs
 
 # Load dataset
 
@@ -9,3 +10,24 @@ cc_apps = pd.read_csv("datasets/cc_approvals.data" , header=None)
 
 # Inspect data
 print(cc_apps.head(5))
+
+#second approach:  using a class and accessing the class for filepath name and then
+#read the file using function read_file
+#
+#USE CLASS to read csv file in a specific path
+#class
+import pandas as pd
+class CustomETL:
+    def __init__(self,filepath):
+        self.filepath = filepath
+    
+    def read_file(self):
+        self.data = pd.read_csv(self.filepath)
+        return self.data
+        
+        
+## access class with path where file is located
+ac = CustomETL('C:/Users/USUARIO/datacamp/DATA/crx.csv')
+
+# read file in path
+cc_apps = ac.read_file()
