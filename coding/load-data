@@ -31,3 +31,6 @@ ac = CustomETL('C:/Users/USUARIO/datacamp/DATA/crx.csv')
 
 # read file in path
 cc_apps = ac.read_file()
+
+# Inspect data
+print(cc_apps.head(5))
