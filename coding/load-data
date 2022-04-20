@@ -1,11 +1,11 @@
 import pandas as pd
 
 # ... YOUR CODE FOR TASK 1 ...
-# 1st approach.. using pandas command pr.read_cvs
+# 1st approach.. using pandas command pd.read_cvs
 
 # Load dataset
 
-cc_apps = pd.read_csv("datasets/cc_approvals.data" , header=None)
+cc_apps = pd.read_csv("C:/Users/USUARIO/datacamp/DATA/crx.csv" , header=None)
 ...
 
 # Inspect data
